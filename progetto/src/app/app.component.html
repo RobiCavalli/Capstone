@@ -14,7 +14,7 @@
   <li class="nav-item">
     <li><a href="javascript:void(0)" [routerLink]="['/laboratori']"><button type="button" class="btn btn4">Laboratori</button></a>
   </li>
-  <li class="nav-item">
+  <li class="nav-item" *ngIf="controllo() == true">
     <li><a href="javascript:void(0)" [routerLink]="['/approfondimenti']"><button type="button" class="btn btn5">Approfondimenti</button></a>
   </li>
 </ul>

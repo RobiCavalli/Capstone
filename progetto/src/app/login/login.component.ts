@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, NgForm, Validators } from '@angular/forms';
 import { AuthserviceService } from '../auth/authservice.service';
+import { User } from '../auth/user.model';
 
 @Component({
   selector: 'app-login',
@@ -9,7 +10,7 @@ import { AuthserviceService } from '../auth/authservice.service';
 })
 export class LoginComponent {
   error: any;
-  constructor(private authService: AuthserviceService) {}
+  constructor(public authService: AuthserviceService) {}
 
 
   onSubmit(form: NgForm) {
@@ -22,14 +23,28 @@ export class LoginComponent {
     //true perchè stiamo inviando richiesta e caricando risposta
 
       this.authService.login(username, password).subscribe(
-        (resData) => {
+        (resData)=> {
           console.log(resData);
+          let a : User = <User> resData ;
+          this.authService.user.accessToken = a.accessToken;
+          console.log(this.authService.user)
+
         },
-       errorMessage => {
+        errorMessage => {
           console.log(errorMessage);
           this.error = errorMessage;
 
         }
       );
     }
+
+  logout(){
+    this.authService.logout();
+    console.log("funziona")
+  }
+
+
+
+
+
 }
