@@ -1,0 +1,37 @@
+<!--Modulo di iscrizione e accesso-->
+
+<body>
+  <header>
+    <h1>Registrati</h1>
+    <h2 appHightlight>Potrai accedere alla sezione Approfondimenti con tante novità sul coding
+    </h2>
+  </header>
+  <div class="row" class="form1">
+    <!--Lspinner viene mostrato solo se sta caricando-->
+    <div *ngIf="isLoading" style ="text-align: center;">
+      <app-loading-spinner></app-loading-spinner>
+    </div>
+      <form #form="ngForm" (ngSubmit)="onSubmit(form)" *ngIf="!isLoading">
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="name" class="form-control" ngModel name="name" required/>
+        </div>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" class="form-control" ngModel name="username" require />
+        </div>
+        <div class="form-group">
+              <label for="email">E-Mail</label>
+              <input type="email" id="email" class="form-control" ngModel name="email" required/>
+        </div>
+        <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" class="form-control" ngModel name="password"
+              required minlength="6" />
+        </div>
+        <div class="bcontainer">
+          <button id="bl" type="submit" class="btn btn-primary">Invio</button>
+        </div>
+      </form>
+     </div>
+</body>

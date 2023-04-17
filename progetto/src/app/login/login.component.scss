@@ -1,0 +1,54 @@
+body{
+  background-color: #ffdbe5;
+}
+
+
+h1{
+  margin-top: 20px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+}
+h2{
+  font-size: x-large;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+form{
+  margin:0 auto;
+  color:black;
+  font-weight: bold;
+  font-style: italic;
+  width: 200px;
+  height:220px;
+  text-align: center;
+}
+
+label{
+  margin-bottom: 10px;
+}
+#bl{
+color:black;
+width: 100px;
+margin-top: 13px;
+background: linear-gradient(90deg, rgb(200, 113, 151) 5%, rgb(155, 36, 139) 38%, rgba(150, 40, 109, 0.852) 70%);
+}
+
+.roboa{
+  width: 400px;
+  margin-bottom: 30px;
+}
+
+#fotol{
+  display: flex;
+  justify-content: center;
+}
+
+#fotop{
+  display: flex;
+  justify-content: center;
+}
+
+

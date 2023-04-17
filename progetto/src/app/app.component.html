@@ -1,0 +1,36 @@
+<body>
+<header>
+ <!-- Navbar -->
+ <ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a href="javascript:void(0)" [routerLink]="['/login']"><button type="button" class="btn btn1">Login</button></a>
+  </li>
+  <li class="nav-item">
+    <a href="javascript:void(0)" [routerLink]="['/signup']"><button type="button" class="btn btn2">SignUp</button></a>
+  </li>
+  <li class="nav-item">
+    <li><a href="javascript:void(0)" [routerLink]="['/coding-roboticaEducativa']"><button type="button" class="btn btn3">Coding</button></a>
+  </li>
+  <li class="nav-item">
+    <li><a href="javascript:void(0)" [routerLink]="['/laboratori']"><button type="button" class="btn btn4">Laboratori</button></a>
+  </li>
+  <li class="nav-item">
+    <li><a href="javascript:void(0)" [routerLink]="['/approfondimenti']"><button type="button" class="btn btn5">Approfondimenti</button></a>
+  </li>
+</ul>
+</header>
+
+<!-- Titolo principale -->
+<h1>RoboCodSchool</h1>
+
+
+<router-outlet></router-outlet>
+
+<!-- Footer -->
+<footer id ="fcolore">
+  <div class="text-center text-dark p-3" style="background-color: #ffdbe5;">
+    © 2023 Copyright:
+    <a class="text-dark" href="https://mdbootstrap.com/">RC.Epicode</a>
+  </div>
+</footer>
+</body>

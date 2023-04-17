@@ -1,0 +1,121 @@
+<body>
+  <header>
+    <h1>Laboratori</h1>
+  </header>
+  <!--Introduzione-->
+  <p>
+    <b>I Laboratori di Robotica Educativa</b> permettono di acquisire obiettivi disciplinari in ambito delle materie
+    STEAM, di conoscere il coding e di acquisire competenze trasversali come:
+  </p>
+
+  <p id="p1">
+    <b>
+      • Problem solving
+      • Creatività
+      • Pensiero computazionale
+      • Pensiero Matematico
+      • Pensiero logico
+      • Pensiero laterale
+      • Costruzione del senso del numero
+      • Abilità sociali ed emotive
+      • Concetti topologici
+      • Astrazione
+      • Collaborazione
+      • Debugging
+    </b>
+  </p>
+
+  <!-- Card per Laboratori -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" class="i1" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" appHightlight>Card Title1</h5>
+            <button id="button" (click)="showHidden()">Descrizione</button>
+            <div *ngIf="show">
+              <p class="card-text">Laboratorio con BeeBot:
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" class="i1" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" appHightlight>Card Title2</h5>
+            <button id="button" (click)="showHidden()">Descrizione</button>
+            <div *ngIf="show">
+              <p class="card-text">laboratorio con Mtiny</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" class="i1" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" appHightlight>Card Title3</h5>
+            <button id="button" (click)="showHidden()">Descrizione</button>
+            <div *ngIf="show">
+              <p class="card-text">Laboratorio con Codey</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" class="i1" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" appHightlight>Card Title4</h5>
+            <button id="button" (click)="showHidden()">Descrizione</button>
+            <div *ngIf="show">
+              <p class="card-text">Laboratorio con MakeyM.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Carousel  <img src="https://via.placeholder.com/300x200">-->
+
+
+  <ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="https://res.cloudinary.com/dx7j6eumf/image/upload/v1681461383/mtiny1_yqkw9a.jpg" id="imgc" alt="Random first slide" />
+      </div>
+
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="https://res.cloudinary.com/dx7j6eumf/image/upload/v1681461358/beec_pb3tvo.jpg" id="imgc" alt="Random second slide" />
+      </div>
+
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="https://res.cloudinary.com/dx7j6eumf/image/upload/v1681461370/makeyc_uu5jcf.jpg" id="imgc" alt="Random third slide" />
+      </div>
+
+    </ng-template>
+  </ngb-carousel>
+
+
+
+
+
+
+
+
+
+
+</body>
