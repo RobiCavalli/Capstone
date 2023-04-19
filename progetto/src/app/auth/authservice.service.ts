@@ -22,6 +22,7 @@ export class AuthserviceService {
   //utente loggato
   isLogged: boolean = false;
 
+
   //metodo d'iscrizione e inviare richiesta all url di iscrizione
   constructor(private http: HttpClient) {}
 
@@ -39,6 +40,7 @@ export class AuthserviceService {
           catchError(this.handleError),
           tap((resData) => {
             localStorage.setItem('user', JSON.stringify(resData));
+            console.log("singup ---")
             //creo il mio nuovo utente
             //const user = new User(resData.username, resData.password, resData._token, resData._tokenExpirationDate)
           })
@@ -56,8 +58,9 @@ export class AuthserviceService {
       .pipe(
         tap((resData) => {
           localStorage.setItem('user', JSON.stringify(resData));
-
+          console.log("login +++")
           this.isLogged = true;
+          console.log(this.isLogged);
         })
       );
   }
@@ -65,12 +68,9 @@ export class AuthserviceService {
   //controllo utente
 
   controluser() {
-    if (localStorage.getItem('user')) {
-      const user1 = JSON.parse(localStorage.getItem('user')!);
-      this.user = user1;
-      this.isLogged = true;
-      console.log(this.user);
-    }
+    const user1 = JSON.parse(localStorage.getItem('user')!);
+    this.user = user1;
+    console.log("controluser");
   }
 
   //logout
@@ -78,5 +78,6 @@ export class AuthserviceService {
     localStorage.removeItem('user');
     this.isLogged = false;
     console.log(this.isLogged);
+
   }
 }

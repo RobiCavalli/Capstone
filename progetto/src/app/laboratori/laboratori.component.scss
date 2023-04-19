@@ -1,4 +1,4 @@
-body{
+#d1{
   background-color: #ffdbe5;
 }
 
@@ -30,6 +30,10 @@ border-width: 2px;
   }
 }
 
+.img-fixed-height{
+  height: 300px;
+  object-fit: cover;
+}
 
 h5{
     text-align: center;

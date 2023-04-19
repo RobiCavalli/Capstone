@@ -12,12 +12,16 @@ export class LoginComponent {
   error: any;
   constructor(public authService: AuthserviceService) {}
 
-
   onSubmit(form: NgForm) {
     //estrarre i miei valori
     if (!form.valid) {
       return;
     }
+    if (this.authService.isLogged ){
+      console.log("bloccosubmit");
+      return;
+    }
+
     const username = form.value.username;
     const password = form.value.password;
     //true perchè stiamo inviando richiesta e caricando risposta
@@ -26,9 +30,8 @@ export class LoginComponent {
         (resData)=> {
           console.log(resData);
           let a : User = <User> resData ;
-          this.authService.user.accessToken = a.accessToken;
           console.log(this.authService.user)
-
+          this.authService.user.accessToken = a.accessToken;
         },
         errorMessage => {
           console.log(errorMessage);
@@ -40,7 +43,6 @@ export class LoginComponent {
 
   logout(){
     this.authService.logout();
-    console.log("funziona")
   }
 
 

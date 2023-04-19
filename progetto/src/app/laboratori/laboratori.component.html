@@ -1,4 +1,4 @@
-<body>
+<div id="d1">
   <header>
     <h1>Laboratori</h1>
   </header>
@@ -29,15 +29,13 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3">
-        <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" class="i1" alt="...">
+        <div class="card" >
+          <img [src]="laboratori[0].url"class="card-img-top i1 img-fixed-height" alt="...">
           <div class="card-body">
-            <h5 class="card-title" appHightlight>Card Title1</h5>
+            <h5 class="card-title" appHightlight>Laboratorio con BeeBot</h5>
             <button id="button" (click)="showHidden()">Descrizione</button>
             <div *ngIf="show">
-              <p class="card-text">Laboratorio con BeeBot:
-
-              </p>
+              <p class="card-text">Laboratorio con BeeBot</p>
             </div>
           </div>
         </div>
@@ -45,9 +43,9 @@
 
       <div class="col-md-3">
         <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" class="i1" alt="...">
+          <img [src]="laboratori[1].url" class="card-img-top i1 img-fixed-height" alt="...">
           <div class="card-body">
-            <h5 class="card-title" appHightlight>Card Title2</h5>
+            <h5 class="card-title" appHightlight>Laboratorio con Mtiny</h5>
             <button id="button" (click)="showHidden()">Descrizione</button>
             <div *ngIf="show">
               <p class="card-text">laboratorio con Mtiny</p>
@@ -56,14 +54,14 @@
         </div>
       </div>
 
-      <div class="col-md-3">
+      <div class="col-md-3" >
         <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" class="i1" alt="...">
+          <img [src]="laboratori[2].url" class="card-img-top i1 img-fixed-height" alt="...">
           <div class="card-body">
-            <h5 class="card-title" appHightlight>Card Title3</h5>
+            <h5 class="card-title" appHightlight>Laboratorio con MakeyM</h5>
             <button id="button" (click)="showHidden()">Descrizione</button>
             <div *ngIf="show">
-              <p class="card-text">Laboratorio con Codey</p>
+              <p class="card-text">Laboratorio con MakeyM</p>
             </div>
           </div>
         </div>
@@ -71,12 +69,12 @@
 
       <div class="col-md-3">
         <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" class="i1" alt="...">
+          <img [src]="laboratori[3].url" class="card-img-top i1 img-fixed-height" alt="...">
           <div class="card-body">
-            <h5 class="card-title" appHightlight>Card Title4</h5>
+            <h5 class="card-title" appHightlight>Laboratorio con Codey</h5>
             <button id="button" (click)="showHidden()">Descrizione</button>
             <div *ngIf="show">
-              <p class="card-text">Laboratorio con MakeyM.</p>
+              <p class="card-text">Laboratorio con Codey</p>
             </div>
           </div>
         </div>
@@ -88,7 +86,7 @@
   <!--Carousel  <img src="https://via.placeholder.com/300x200">-->
 
 
-  <ngb-carousel *ngIf="images">
+  <ngb-carousel>
     <ng-template ngbSlide>
       <div class="picsum-img-wrapper">
         <img src="https://res.cloudinary.com/dx7j6eumf/image/upload/v1681461383/mtiny1_yqkw9a.jpg" id="imgc" alt="Random first slide" />
@@ -118,4 +116,4 @@
 
 
 
-</body>
+</div>

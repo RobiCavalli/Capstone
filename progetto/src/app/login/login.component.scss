@@ -1,4 +1,4 @@
-body{
+#d1{
   background-color: #ffdbe5;
 }
 
@@ -37,8 +37,11 @@ background: linear-gradient(90deg, rgb(200, 113, 151) 5%, rgb(155, 36, 139) 38%,
 }
 
 .roboa{
-  width: 400px;
-  margin-bottom: 30px;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+
 }
 
 #fotol{
@@ -46,9 +49,5 @@ background: linear-gradient(90deg, rgb(200, 113, 151) 5%, rgb(155, 36, 139) 38%,
   justify-content: center;
 }
 
-#fotop{
-  display: flex;
-  justify-content: center;
-}
 
 

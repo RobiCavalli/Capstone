@@ -17,8 +17,8 @@ constructor (public authService: AuthserviceService){
   }
   title = 'progetto';
 
-  public controllo(){
-  return this.authService.isLogged;
+
+
   }
 
-}
+
