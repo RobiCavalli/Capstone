@@ -3,12 +3,12 @@
     <h1>Laboratori</h1>
   </header>
   <!--Introduzione-->
-  <p>
+  <h2 id ="h">
     <b>I Laboratori di Robotica Educativa</b> permettono di acquisire obiettivi disciplinari in ambito delle materie
     STEAM, di conoscere il coding e di acquisire competenze trasversali come:
-  </p>
+  </h2>
 
-  <p id="p1">
+  <p id="p2">
     <b>
       • Problem solving
       • Creatività
@@ -35,7 +35,9 @@
             <h5 class="card-title" appHightlight>Laboratorio con BeeBot</h5>
             <button id="button" (click)="showHidden()">Descrizione</button>
             <div *ngIf="show">
-              <p class="card-text">Laboratorio con BeeBot</p>
+              <p class="card-text">Disegnata una griglia di conchiglie colorate su un cartoncino.<br>
+                 I bambini hanno utilizzato il proprio corpo per determinare i movimenti e poi hanno programmato BeeBot con i comandi appropriati per raggiungere la conchiglia selezionata.<br>
+                 Ogni volta che raggiungevano la conchiglia, dovevano dire il nome del colore in inglese</p>
             </div>
           </div>
         </div>
@@ -48,7 +50,9 @@
             <h5 class="card-title" appHightlight>Laboratorio con Mtiny</h5>
             <button id="button" (click)="showHidden()">Descrizione</button>
             <div *ngIf="show">
-              <p class="card-text">laboratorio con Mtiny</p>
+              <p class="card-text">Mtiny può assumere diverse espressioni, che consentono a chi
+                interagisce con lui di familiarizzare con esse. <br> Utilizzando delle tessere e una reading pen, i bambini hanno programmato il robot lungo un percorso e scelto l'emozione che meglio percepivano in quel momento, fra quelle proposte.<br>
+                Ottenendo un miglioramento nella regolazione e gestione delle emozioni.</p>
             </div>
           </div>
         </div>
@@ -61,7 +65,10 @@
             <h5 class="card-title" appHightlight>Laboratorio con MakeyM</h5>
             <button id="button" (click)="showHidden()">Descrizione</button>
             <div *ngIf="show">
-              <p class="card-text">Laboratorio con MakeyM</p>
+              <p class="card-text">MakeyM collegata a Scratch <br>
+                può essere utilizzata per creare controller personalizzati per i videogiochi /attività.<br>
+                In questo modo, è possibile trasformare qualsiasi oggetto, <br>in un dispositivo di input per il computer.
+              </p>
             </div>
           </div>
         </div>
@@ -74,7 +81,9 @@
             <h5 class="card-title" appHightlight>Laboratorio con Codey</h5>
             <button id="button" (click)="showHidden()">Descrizione</button>
             <div *ngIf="show">
-              <p class="card-text">Laboratorio con Codey</p>
+              <p class="card-text">Codey può essere utilizzato per spiegare il concetto dello spettro dei colori grazie al suo sensore di colore.<br>
+                 Questo sensore emette una luce composta da tutti i colori e controlla quali colori ritornano quando il raggio di luce colpisce una superficie colorata. <br>
+                 In questo modo, il sensore è in grado di distinguere i diversi colori che compongono lo spettro visibile.</p>
             </div>
           </div>
         </div>
@@ -106,14 +115,5 @@
 
     </ng-template>
   </ngb-carousel>
-
-
-
-
-
-
-
-
-
 
 </div>

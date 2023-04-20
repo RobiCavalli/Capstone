@@ -10,6 +10,10 @@ h1{
 
 }
 
+.container{
+margin-bottom: 80px;
+}
+
 .card{
 border-color:black;
 border-top-right-radius:8px;
@@ -48,7 +52,7 @@ h5{
     align-items: center;
     border-color:black;
     border-top-right-radius:8px;
-    border-width: 2px;
+    border-width: 1px;
     color: black;
     font-weight:bold;
     background: linear-gradient(90deg, rgb(200, 113, 151) 5%, rgb(142, 20, 126) 38%, rgba(221, 160, 199, 0.852) 70%);
@@ -56,14 +60,31 @@ h5{
 
 
 p{
+  color: black;
+  text-align: center;
+  font-size: x-small;
+  height: 180px;
+  object-fit: cover;
+}
+
+#h{
+  color:black;
+  margin-bottom: 10px;
   text-align: center;
   font-weight: bold;
   font-style: italic;
 }
 
-#p1{
+
+#p2{
+  margin-top: 50px;
   color: darkmagenta;
+  font-weight: bold;
+  font-size: large;
 }
+
+
+
 
 
 ngb-carousel{

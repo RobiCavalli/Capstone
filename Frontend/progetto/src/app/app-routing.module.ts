@@ -6,35 +6,41 @@ import { CodingRoboticaComponent } from './coding-robotica/coding-robotica.compo
 import { ApprofondimentiComponent } from './approfondimenti/approfondimenti.component';
 import { AuthComponent } from './auth/auth.component';
 
-
 const routes: Routes = [
-{
-  path:"signup",
-  component: AuthComponent
-},
-{
-  path:"login",
-  component: LoginComponent
-},
+  {
+    path: '',
+    redirectTo: '/signup',
+    pathMatch: 'full',
+  },
 
-{
-  path:"laboratori",
-  component: LaboratoriComponent
-},
+  {
+    path: 'signup',
+    component: AuthComponent,
+  },
 
-{
-  path:"coding-roboticaEducativa",
-  component: CodingRoboticaComponent
-},
+  {
+    path: 'login',
+    component: LoginComponent,
+  },
 
-{
-  path:"approfondimenti",
-  component: ApprofondimentiComponent,
-}
+  {
+    path: 'laboratori',
+    component: LaboratoriComponent,
+  },
+
+  {
+    path: 'coding-roboticaEducativa',
+    component: CodingRoboticaComponent,
+  },
+
+  {
+    path: 'approfondimenti',
+    component: ApprofondimentiComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
